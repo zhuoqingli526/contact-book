@@ -22,7 +22,6 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  adapter: sqlite3
   <<: *default
   database: rails_template_development
 
